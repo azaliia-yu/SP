@@ -26,9 +26,10 @@ def copy_with_progress(src: str, dst: str) -> None:
 if __name__ == "__main__":
     file_path = input("Введите путь к файлу для копирования: ").strip()
 
-    print("\n=== Задание 16 ===")
+    print("\nЗадание 16")
 
     base, ext = os.path.splitext(file_path)
     dst_path = f"{base}_copy{ext}"
 
     copy_with_progress(file_path, dst_path)
+
